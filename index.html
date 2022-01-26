@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function add()
+        {
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a+b;
+            document.getElementById("result").value=c;
+        }
+        function sub()
+        {
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a-b;
+            document.getElementById("result").value=c;
+        }
+
+        function mul()
+        {
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a*b;
+            document.getElementById("result").value=c;
+        }
+       
+        function div()
+        {
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a/b;
+            document.getElementById("result").value=c;
+        }
+         </script>
+        <head>
+        <body>
+        <h2>Basic Calculator</h2>
+        <input id="first" value="0"><br><br>
+        <input id="second" value="0"><br><br>
+        <hr>
+         <button onclick="add()">Add</button>
+         <button onclick="sub()">Subtract</button>
+         <button onclick="mul()">Multiplication</button><br><br>
+         <button onclick="div()">Division</button>
+         <h4>Result</h4>
+         <input id="result">
+         <link rel="stylesheet" href="style.css">
+        </body>
+        </html>
